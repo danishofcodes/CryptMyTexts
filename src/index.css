@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.decrypt-textarea {
+  background-color: #989898;
+  width: 300px;
+}
+
+.encrypt-textarea {
+  background-color: #989898;
+  width: 300px;
+
+}
+
+.normal-textarea {
+  background-color: #ffffff;
+  width: 300px;
+
+}
+
+
+
+
+h5 {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+select {
+  height: 35px;
+  width: 120px;
+  padding: 5px;
+}
+p, h1,h2,h3, h4,h5, label{
+  color:#fff;
+}
+button{
+  background-color: #fff;
+  margin: 10px;
+  padding: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+select{
+margin: 10px;
+}
+
+.decrypt-btn{
+  background-color: #00c142;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 4px;
+
+}
+
+.decrypt-btn:hover{
+  background-color: #016523;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.clear-btn{
+  background-color: #292929;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.clear-btn:hover{
+  background-color: #c51a1a;
+  transition: 0.3s;
+
+}
