@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+  font-family: "Noto Sans", sans-serif;
+  background-image: url(../src/assets/bg-encrypt.png);
+}
 
-
+nav{
+  background: #0096336e;
+  color: #fff;
+  font-size: 30px;
+  padding: 15px;
+  font-weight: bold;
+  backdrop-filter: blur(3px);
+}
 .decrypt-textarea {
   background-color: #989898;
   width: 300px;
@@ -21,55 +33,97 @@
 }
 
 
-
-
 h5 {
   color: #fff;
   font-family: sans-serif;
 }
 
 select {
-  height: 35px;
+  height: 25px;
   width: 120px;
-  padding: 5px;
+  padding-left: 5px;
+  font-size: 13px;
+  border-radius: 2px;
+  margin: 10px;
 }
 p, h1,h2,h3, h4,h5, label{
   color:#fff;
 }
 button{
   background-color: #fff;
-  margin: 10px;
+  /* margin: 10px; */
   padding: 5px;
   height: 40px;
   width: 100px;
 }
 
-select{
-margin: 10px;
+label{
+  font-size: 13px;
 }
 
-.decrypt-btn{
+
+.decrypt-btn.active{
   background-color: #00c142;
-  font-weight: 500;
+  /* font-weight: 500; */
   color: #ffffff;
-  border-radius: 4px;
 
 }
 
-.decrypt-btn:hover{
+.encrypt-btn.active{
+  background-color: #005086;
+  /* font-weight: 500; */
+  color: #ffffff;
+
+}
+/* .decrypt-btn:hover{
   background-color: #016523;
-  font-weight: 500;
+  /* font-weight: 500;
   transition: 0.3s;
-}
+*/
 
 .clear-btn{
   background-color: #292929;
     color: #ffffff;
-    font-weight: 500;
+    /* font-weight: 500; */
     border-radius: 4px;
 }
 .clear-btn:hover{
   background-color: #c51a1a;
   transition: 0.3s;
 
+}
+
+.outputsec-card{
+  margin: auto;
+  border-radius: 4px;
+}
+
+.outputsec-card h5{
+  background-color: #292929;
+  padding: 10px;
+}
+
+.copyBtn{
+  height: 25px;
+  width: 40px;
+  border-radius: 2.5px;
+  font-size: 11px;
+  padding: 0;
+  background: #ff711b;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+.copyBtn:hover{
+
+  background: #ff7d2d;
+  box-shadow: rgb(255 175 62 / 38%) 0px 0px 13px 4px;
+  transition: 0.3s;
+}
+.text-output{
+  height: 200px;
+  background-color: #989898;
+  word-wrap: break-word;
+  text-align: left;
+  overflow: auto;
 }
